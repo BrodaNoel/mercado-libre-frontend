@@ -1,60 +1,97 @@
 .ProductDetail {
-  background-color: #FFF;
-  border-radius: 4px;
+  .breadcrumbs {
+    ul {
+      margin: 0 0 16px 0;
+      padding: 0;
 
-  .picture {
-    width: 550px;
-    float: left;
-    text-align: center;
+      li {
+        display: inline;
+        font-size: 12px;
+        color: #999;
+        margin-left: 10px;
+
+        &:before {
+          content: '\f054';
+          font-family: Fontawesome;
+          font-size: 10px;
+          margin-right: 5px;
+        }
+
+        &:first-of-type {
+          margin-left: 0;
+
+          &:before {
+            display: none;
+          }
+        }
+
+        &:last-of-type {
+          font-weight: bold;
+        }
+      }
+    }
   }
 
-  .details {
-    float: left;
-    width: calc(100% - 550px);
-    padding-right: 32px;
+  .product {
+    background-color: #FFF;
+    border-radius: 4px;
 
-    .condition {
-      font-size: 14px;
-      margin-top: 32px;
+    .picture {
+      width: 550px;
+      float: left;
+      text-align: center;
     }
 
-    .title {
-      font-size: 24px;
-      margin-top: 16px;
-    }
+    .details {
+      float: left;
+      width: calc(100% - 550px);
+      padding-right: 32px;
 
-    .price {
-      font-size: 46px;
-      margin-top: 32px;
+      .condition {
+        font-size: 14px;
+        margin-top: 32px;
+      }
 
-      .decimals {
-        font-size: 23px;
+      .title {
+        font-size: 24px;
+        margin-top: 16px;
+      }
+
+      .price {
+        font-size: 46px;
+        margin-top: 32px;
+
+        .decimals {
+          font-size: 23px;
+          position: relative;
+          top: -15px;
+        }
+      }
+
+      button {
+        margin-top: 32px;
+        background-color: #3483FA;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+        color: #FFF;
+        line-height: 25px;
       }
     }
 
-    button {
-      margin-top: 32px;
-      background-color: #3483FA;
-      border: none;
-      border-radius: 4px;
-      width: 100%;
-      color: #FFF;
-      line-height: 25px;
-    }
-  }
+    .description {
+      margin-top: 15px;
+      padding: 32px;
+      clear: both;
+      color: #999;
+      font-size: 16px;
+      white-space: pre-wrap;
 
-  .description {
-    margin-top: 15px;
-    padding: 32px;
-    clear: both;
-    color: #999;
-    font-size: 16px;
-    white-space: pre-wrap;
-
-    h3 {
-      color: #000;
-      margin-bottom: 32px;
-      font-size: 28px;
+      h3 {
+        color: #000;
+        margin-bottom: 32px;
+        font-size: 28px;
+      }
     }
   }
 }

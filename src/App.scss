@@ -10,7 +10,8 @@ a, a:active, a:visited {
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, sans-serif;
-  background-color: #FFF;
+  // If Proxima Nova is not installed locally, It's going to use Helvetica.
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  background-color: #EEE;
   color: #000;
 }

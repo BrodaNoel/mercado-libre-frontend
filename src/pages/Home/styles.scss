@@ -1,0 +1,13 @@
+@import 'vars.scss';
+
+.Home {
+  .Header {
+    margin-bottom: 16px;
+  }
+
+  .ProductList,
+  .ProductDetail {
+    width: $contentWidth;
+    margin: 0 auto;
+  }
+}

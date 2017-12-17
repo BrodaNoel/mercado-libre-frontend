@@ -1,0 +1,68 @@
+.ProductList {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #FFF;
+
+  .product {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #EEE;
+    cursor: pointer;
+
+    &:last-of-type {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .picture {
+      width: 180px;
+      height: 180px;
+      border-radius: 4px;
+      float: left;
+      background-size: cover;
+    }
+
+    .column {
+      width: calc(100% - 180px - 160px);
+      overflow: hidden;
+      padding-left: 16px;
+      float: left;
+
+      .priceWrapper {
+        width: 100%;
+        overflow: auto;
+        margin-top: 16px;
+
+        .price {
+          font-size: 24px;
+          float: left;
+        }
+
+        .freeShipping {
+          background-image: url(../../assets/shipping-x2.png);
+          background-size: cover;
+          margin: 4px 0 0 8px;
+          width: 20px;
+          height: 20px;
+          float: left;
+        }
+      }
+
+      .title {
+        margin-top: 16px;
+        font-size: 18px;
+        padding-right: 100px;
+      }
+    }
+
+    .address {
+      width: 160px;
+      float: right;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  }
+}

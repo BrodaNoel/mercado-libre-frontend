@@ -10,7 +10,7 @@ class ProductDetail extends Component {
     return (
       <div className="ProductDetail">
         <div className="picture">
-          <img src={product.picture} alt="product image"/>
+          <img src={product.picture} alt="product"/>
         </div>
 
         <div className="details">
@@ -22,7 +22,7 @@ class ProductDetail extends Component {
 
           <div>
             <div className="price">
-              $ {product.price.amount}
+              $ {utils.parseCurrency(product.price.amount)}
               <span className="decimals">{utils.zeroFill(product.price.decimals)}</span>
             </div>
 

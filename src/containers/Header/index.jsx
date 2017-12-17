@@ -5,7 +5,6 @@ import './styles.css';
 
 class Header extends Component {
   state = {
-    search: '',
     productSelected: null
   };
 
@@ -15,8 +14,9 @@ class Header extends Component {
         <div className="content">
 
           <div className="logoContainer">
-            <div className="logo"></div>
+            <a href="/"><div className="logo"></div></a>
           </div>
+
           <Search onSearch={this.props.onSearch}></Search>
 
         </div>
